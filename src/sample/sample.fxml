@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#mousedragged" onMouseMoved="#mousemoved" onMousePressed="#mousepressed" onMouseReleased="#mousereleased" prefHeight="679.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Pane prefHeight="58.0" prefWidth="839.0">
+            <children>
+                <Button layoutX="81.0" layoutY="4.0" mnemonicParsing="false" text="rect" />
+                <Button layoutX="669.0" layoutY="5.0" mnemonicParsing="false" text="Eraser" />
+                <Button layoutX="137.0" layoutY="1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="65.0">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../paint-brush-icon-3.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+                <Slider fx:id="size" layoutX="378.0" layoutY="6.0" showTickLabels="true" showTickMarks="true" />
+                <ColorPicker fx:id="colorpick" layoutX="212.0" layoutY="5.0" />
+                <Button layoutX="625.0" layoutY="5.0" mnemonicParsing="false" text="line" />
+                <Button layoutX="729.0" layoutY="5.0" mnemonicParsing="false" text="RoundedRect" />
+                <Button layoutX="11.0" layoutY="4.0" mnemonicParsing="false" text="Ellipse" />
+                <Button layoutX="547.0" layoutY="-3.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="60.0">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../transparent-black-circle-hi.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            </children>
+        </Pane>
+        <Label fx:id="label1" layoutX="14.0" layoutY="448.0" prefHeight="44.0" prefWidth="92.0" text="x:" />
+        <Label fx:id="label2" layoutX="14.0" layoutY="492.0" prefHeight="74.0" prefWidth="92.0" text="y:" />
+    </children>
+</Pane>
